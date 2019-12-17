@@ -21,7 +21,7 @@ App = {
       App.contracts.InfoContract = TruffleContract(data);
       App.contracts.InfoContract.setProvider(App.web3Provider);
       return App.getInfo();
-      //App.watchChanged();
+      App.watchChanged();
     });
     App.bindEvents();
   },
